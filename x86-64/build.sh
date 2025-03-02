@@ -22,8 +22,12 @@ PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 PACKAGES="$PACKAGES luci-app-openclash"
 PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
+PACKAGES="$PACKAGES luci-app-alist"   
+PACKAGES="$PACKAGES luci-i18n-alist-zh-cn"    
+PACKAGES="$PACKAGES luci-i18n-frpc-zh-cn"      
+PACKAGES="$PACKAGES frpc"
+PACKAGES="$PACKAGES alist"
 
-# 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
     PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
     echo "Adding package: luci-i18n-dockerman-zh-cn"
